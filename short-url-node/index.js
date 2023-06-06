@@ -5,6 +5,7 @@ const URL = require("./models/url");
 
 const app = express();
 const PORT = 8001;
+app.set("view engine", "ejs");
 
 connectToMongoDB("mongodb+srv://sowmya19454:19WH1a0454@cluster0.zeswwhr.mongodb.net/?retryWrites=true&w=majority").then(() =>
   console.log("Mongodb connected")
